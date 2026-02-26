@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name" translatable="false">Checky</string>
+
+    //WelcomeScreen
+    <string name="welcome_screen_button_welcome">Bienvenido</string>
+
+
+    //LoginScreen
+    <string name="login_screen_title_appbar">Checky</string>
+    <string name="login_screen_title">Iniciar Sesion</string>
+    <string name="login_screen_label_user">Correo Electronico</string>
+    <string name="login_screen_label_password">Contraseña</string>
+    <string name="login_screen_button_sesion">Iniciar Sesión</string>
+    <string name="login_screen_textButton_password_lose">¿Has olvidado la contraseña?</string>
+    <string name="login_screen_button_register">Registrarse</string>
+
+
+    //RegisterScreen
+
+        //ModePhone
+    <string name="register_screen_subtitle_appbar">Registro</string>
+    <string name="register_screen_title_phone">¿Cuál es tu número móvil?</string>
+    <string name="register_screen_subtitle_phone">Introduce tu número de movil de contacto. Nadie lo vera en tu perfil.</string>
+    <string name="register_screen_label_phone">Numero de telefono</string>
+    <string name="register_screen_body_phone">Puede que recibas notificaciones nuestras en WhatsApp y por SMS por motivos de seguridad al inciar sesión.</string>
+    <string name="register_screen_button_next">Siguiente</string>
+    <string name="register_screen_change_mode">Registrarse con tu correo electrónico</string>
+    <string name="register_screen_textButton_bottom">Buscar mi cuenta</string>
+        //ModeEmail
+    <string name="register_screen_title_email">¿Cuál es tu correo electrónico?</string>
+    <string name="register_screen_subtitle_email">Introduce tu correo electronico. Nadie lo vera en tu perfil.</string>
+    <string name="register_screen_label_email">Correo electronico</string>
+    <string name="register_screen_body_email">Tambien te enviaremos correos electrónicos.Puedes cancelar esta opcion cuando quieras.</string>
+
+
+
+
+    //MainScreen
+    <string name="main_screen_button_profile">Perfil</string>
+
+    //ProfileScreen
+    <string name="profile_screen_title_appbar">Perfil</string>
+    <string name="profile_screen_title_body">Detalles de cuenta</string>
+    <string name="profile_screen_body_email">Correo Electronico</string>
+    <string name="profile_screen_body_password">Contraseña</string>
+    <string name="profile_screen_body_name">Nombre</string>
+    <string name="profile_screen_body_phone">Telefono</string>
+
+
+    //Variables
+    <string name="Next">Siguiente</string>
+
+</resources>

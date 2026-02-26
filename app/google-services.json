@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "19515722866",
+    "project_id": "receivesms-8f27818c",
+    "storage_bucket": "receivesms-8f27818c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19515722866:android:d037ae7ce04abc0a9fc6eb",
+        "android_client_info": {
+          "package_name": "com.abexa.myapplication1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl3TaZWjjeS3ONpWcDlChCbwloS3CF73A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
