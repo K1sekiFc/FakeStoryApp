@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name" translatable="false">Checky</string>
+    <string name="app_name" translatable="false">Fstory</string>
 
     //WelcomeScreen
     <string name="welcome_screen_button_welcome">Bienvenido</string>
 
 
     //LoginScreen
-    <string name="login_screen_title_appbar">Checky</string>
+    <string name="login_screen_title_appbar">Fstory</string>
     <string name="login_screen_title">Iniciar Sesion</string>
     <string name="login_screen_label_user">Correo Electronico</string>
     <string name="login_screen_label_password">Contraseña</string>

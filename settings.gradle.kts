@@ -13,7 +13,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Checky"
+rootProject.name = "FStory"
 
 include(":app")
  

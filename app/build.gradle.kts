@@ -9,11 +9,11 @@ plugins {
 }
 
 android {
-    namespace = "com.abexa.Checky"
+    namespace = "com.checky.fstory"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.Checky.FStory"
+        applicationId = "com.checky.fstory"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -77,15 +77,16 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.retrofit.adapter)
 
+
 //glide
 
-    implementation("com.github.bumptech.glide:glide:4.16.0")
+    implementation(libs.glide)
 
 //firebase
     implementation(libs.firebase.firestore)
 
 //COURUTINES
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
+    implementation(libs.kotlinx.coroutines.android)
     implementation(libs.androidx.navigation3.ui)
 
 
@@ -96,21 +97,20 @@ dependencies {
 
 
 //Livedata
-
-    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.9.4")
+    implementation(libs.androidx.lifecycle.livedata.ktx)
 
 //core kotlin
-    implementation("androidx.core:core-ktx:1.17.0")
+    implementation(libs.androidx.core.ktx)
 
-    implementation("androidx.compose.material3:material3:1.4.0")
+    implementation(libs.androidx.material3)
 
 //Navigation
     implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.navigation3.runtime)
 
 //Testing
-    implementation(libs.androidx.material3)
+
     implementation(libs.androidx.ui.test)
-    implementation(libs.androidx.navigation3.runtime)
     implementation(libs.androidx.ui.text.google.fonts)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
