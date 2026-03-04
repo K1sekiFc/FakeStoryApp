@@ -79,8 +79,8 @@ dependencies {
 
 
 //glide
-
-    implementation(libs.glide)
+//
+//    implementation(libs.glide)
 
 //firebase
     implementation(libs.firebase.firestore)
