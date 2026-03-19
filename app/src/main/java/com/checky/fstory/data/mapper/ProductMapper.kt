@@ -1,8 +1,8 @@
-package com.checky.fstory.ui.data.mapper
+package com.checky.fstory.data.mapper
 
-import com.checky.fstory.ui.data.local.entity.ProductDbEntity
-import com.checky.fstory.ui.data.remote.model.response.ProductResponse
-import com.checky.fstory.ui.domain.entity.ProductEntity
+import com.checky.fstory.data.local.entityDB.ProductDbEntity
+import com.checky.fstory.data.remote.model.response.ProductResponse
+import com.checky.fstory.domain.entity.ProductEntity
 
 
 

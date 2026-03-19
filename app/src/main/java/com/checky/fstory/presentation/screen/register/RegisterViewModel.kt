@@ -1,4 +1,4 @@
-package com.checky.fstory.ui.presentation.screen.register
+package com.checky.fstory.presentation.screen.register
 
 
 import android.util.Patterns

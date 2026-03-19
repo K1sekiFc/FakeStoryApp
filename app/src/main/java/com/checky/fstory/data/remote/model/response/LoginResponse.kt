@@ -1,4 +1,4 @@
-package com.checky.fstory.ui.data.remote.model.response
+package com.checky.fstory.data.remote.model.response
 
 import kotlinx.serialization.Serializable
 

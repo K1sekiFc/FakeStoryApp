@@ -1,4 +1,4 @@
-package com.checky.fstory.ui.data.util
+package com.checky.fstory.data.util
 
 import android.util.Base64
 import kotlinx.serialization.json.Json

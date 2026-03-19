@@ -1,28 +1,28 @@
 //package com.checky.fstory.di
 
-
-import android.content.Context
-import androidx.datastore.core.DataStore
-import androidx.datastore.preferences.core.PreferenceDataStoreFactory
-import androidx.datastore.preferences.core.Preferences
-import androidx.datastore.preferences.preferencesDataStoreFile
-import com.checky.fstory.ui.data.remote.api.AuthApi
-import com.checky.fstory.ui.data.remote.api.CartApi
-import com.checky.fstory.ui.data.remote.api.ProductApi
-import com.checky.fstory.ui.data.local.dao.ProductDao
-import com.checky.fstory.ui.data.local.datastore.SessionDataStore
-import com.checky.fstory.ui.data.repository.AuthRepositoryImpl
-import com.checky.fstory.ui.data.repository.CartRepositoryImpl
-import com.checky.fstory.ui.data.repository.ProductRepositoryImpl
-import com.checky.fstory.ui.domain.repository.AuthRepository
-import com.checky.fstory.ui.domain.repository.CartRepository
-import com.checky.fstory.ui.domain.repository.ProductRepository
-import dagger.Module
-import dagger.Provides
-import dagger.hilt.InstallIn
-import dagger.hilt.android.qualifiers.ApplicationContext
-import dagger.hilt.components.SingletonComponent
-import javax.inject.Singleton
+//
+//import android.content.Context
+//import androidx.datastore.core.DataStore
+//import androidx.datastore.preferences.core.PreferenceDataStoreFactory
+//import androidx.datastore.preferences.core.Preferences
+//import androidx.datastore.preferences.preferencesDataStoreFile
+//import com.checky.fstory.ui.data.remote.api.AuthApi
+//import com.checky.fstory.ui.data.remote.api.CartApi
+//import com.checky.fstory.ui.data.remote.api.ProductApi
+//import com.checky.fstory.ui.data.local.dao.ProductDao
+//import com.checky.fstory.ui.data.local.datastore.SessionDataStore
+//import com.checky.fstory.ui.data.repository.AuthRepositoryImpl
+//import com.checky.fstory.ui.data.repository.CartRepositoryImpl
+//import com.checky.fstory.ui.data.repository.ProductRepositoryImpl
+//import com.checky.fstory.ui.domain.repository.AuthRepository
+//import com.checky.fstory.ui.domain.repository.CartRepository
+//import com.checky.fstory.ui.domain.repository.ProductRepository
+//import dagger.Module
+//import dagger.Provides
+//import dagger.hilt.InstallIn
+//import dagger.hilt.android.qualifiers.ApplicationContext
+//import dagger.hilt.components.SingletonComponent
+//import javax.inject.Singleton
 
 //@Module
 //@InstallIn(SingletonComponent::class)

@@ -1,10 +1,10 @@
-package com.checky.fstory.ui.data.local.dao
+package com.checky.fstory.data.local.dao
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.checky.fstory.ui.data.local.entity.ProductDbEntity
+import com.checky.fstory.data.local.entityDB.ProductDbEntity
 import kotlinx.coroutines.flow.Flow
 
 @Dao

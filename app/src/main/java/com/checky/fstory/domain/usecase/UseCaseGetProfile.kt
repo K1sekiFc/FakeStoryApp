@@ -1,7 +1,7 @@
-package com.checky.fstory.ui.domain.usecase
+package com.checky.fstory.domain.usecase
 
-import com.checky.fstory.ui.domain.entity.UserEntity
-import com.checky.fstory.ui.domain.repository.AuthRepository
+import com.checky.fstory.domain.entity.UserEntity
+import com.checky.fstory.domain.repository.AuthRepository
 import javax.inject.Inject
 
 class UseCaseGetProfile @Inject constructor(private val authRepository: AuthRepository){

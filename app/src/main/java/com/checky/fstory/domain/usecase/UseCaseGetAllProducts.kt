@@ -1,7 +1,7 @@
-package com.checky.fstory.ui.domain.usecase
+package com.checky.fstory.domain.usecase
 
-import com.checky.fstory.ui.domain.entity.ProductEntity
-import com.checky.fstory.ui.domain.repository.ProductRepository
+import com.checky.fstory.domain.entity.ProductEntity
+import com.checky.fstory.domain.repository.ProductRepository
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 

@@ -2,8 +2,8 @@ package com.checky.fstory.di
 
 import android.content.Context
 import androidx.room.Room
-import com.checky.fstory.ui.data.local.dao.ProductDao
-import com.checky.fstory.ui.data.local.database.AppDatabase
+import com.checky.fstory.data.local.dao.ProductDao
+import com.checky.fstory.data.local.database.AppDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

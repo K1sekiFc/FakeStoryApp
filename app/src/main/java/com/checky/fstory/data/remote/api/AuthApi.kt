@@ -1,8 +1,8 @@
-package com.checky.fstory.ui.data.remote.api
+package com.checky.fstory.data.remote.api
 
-import com.checky.fstory.ui.data.remote.model.request.LoginRequest
-import com.checky.fstory.ui.data.remote.model.response.LoginResponse
-import com.checky.fstory.ui.data.remote.model.response.UserResponse
+import com.checky.fstory.data.remote.model.request.LoginRequest
+import com.checky.fstory.data.remote.model.response.LoginResponse
+import com.checky.fstory.data.remote.model.response.UserResponse
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.POST

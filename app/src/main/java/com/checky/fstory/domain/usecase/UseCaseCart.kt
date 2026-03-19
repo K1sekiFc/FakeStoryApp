@@ -1,7 +1,7 @@
-package com.checky.fstory.ui.domain.usecase
+package com.checky.fstory.domain.usecase
 
-import com.checky.fstory.ui.domain.entity.CartEntity
-import com.checky.fstory.ui.domain.repository.CartRepository
+import com.checky.fstory.domain.entity.CartEntity
+import com.checky.fstory.domain.repository.CartRepository
 import javax.inject.Inject
 
 class UseCaseCart @Inject constructor(private val cartRepository: CartRepository) {

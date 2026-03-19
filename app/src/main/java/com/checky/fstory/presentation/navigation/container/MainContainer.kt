@@ -1,5 +1,6 @@
-package com.checky.fstory.ui.presentation.navigation.container
+package com.checky.fstory.presentation.navigation.container
 
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -9,10 +10,10 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.checky.fstory.ui.presentation.component.AppBottomBar
-import com.checky.fstory.ui.presentation.screen.mainContainer.main.MainScreen
-import com.checky.fstory.ui.presentation.screen.mainContainer.profile.ProfileScreen
-import com.checky.fstory.ui.presentation.screen.mainContainer.settings.SettingScreen
+import com.checky.fstory.presentation.component.AppBottomBar
+import com.checky.fstory.presentation.screen.mainContainer.main.MainScreen
+import com.checky.fstory.presentation.screen.mainContainer.profile.ProfileScreen
+import com.checky.fstory.presentation.screen.mainContainer.settings.SettingScreen
 
 @Composable
 fun MainContainer() {
@@ -37,16 +38,16 @@ fun MainContainer() {
                 },
             )
         }
-    ) { padding ->
-
+    ) {paddingFromScaffold ->
         NavHost(
             navController = navController,
             startDestination = "home",
-            modifier = Modifier.padding(padding)
+            modifier = Modifier
         ) {
 
             composable("home") {
                 MainScreen(
+                    bottomPadding = paddingFromScaffold.calculateBottomPadding(),
                     navigateToProfile = { navController.navigate("profile") }
                 )
             }
@@ -56,7 +57,7 @@ fun MainContainer() {
                 )
             }
             composable("settings") {
-                SettingScreen()
+                Text("settingScreen" )
             }
         }
     }

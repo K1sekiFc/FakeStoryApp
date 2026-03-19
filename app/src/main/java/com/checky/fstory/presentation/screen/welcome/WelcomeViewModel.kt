@@ -1,4 +1,4 @@
-package com.checky.fstory.ui.presentation.screen.welcome
+package com.checky.fstory.presentation.screen.welcome
 
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -11,8 +11,6 @@ class WelcomeViewModel @Inject constructor(): ViewModel() {
 
     private val _uiState = MutableStateFlow(WelcomeUIState())
     val uiState: StateFlow<WelcomeUIState> = _uiState
-
-
 }
 
 data class WelcomeUIState(

@@ -1,4 +1,4 @@
-package com.checky.fstory.ui.data.local.datastore
+package com.checky.fstory.data.local.datastore
 
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences

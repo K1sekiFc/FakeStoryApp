@@ -1,4 +1,4 @@
-package com.checky.fstory.ui.domain.entity
+package com.checky.fstory.domain.entity
 
 
 data class UserEntity (

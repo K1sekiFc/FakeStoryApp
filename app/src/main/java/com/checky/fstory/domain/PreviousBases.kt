@@ -1,4 +1,4 @@
-package com.checky.fstory.ui.domain
+package com.checky.fstory.domain
 
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

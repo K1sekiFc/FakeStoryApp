@@ -1,4 +1,4 @@
-package com.checky.fstory.ui.presentation.theme
+package com.checky.fstory.presentation.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.font.FontFamily

@@ -1,4 +1,4 @@
-package com.checky.fstory.ui.presentation.screen.ubication
+package com.checky.fstory.presentation.screen.ubication
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -9,7 +9,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import com.checky.fstory.ui.presentation.component.GradientBackground
+import com.checky.fstory.presentation.component.GradientBackground
 
 
 @Composable

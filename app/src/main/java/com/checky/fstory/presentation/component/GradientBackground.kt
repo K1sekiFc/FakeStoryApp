@@ -1,4 +1,4 @@
-package com.checky.fstory.ui.presentation.component
+package com.checky.fstory.presentation.component
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box

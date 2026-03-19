@@ -1,17 +1,17 @@
-package com.checky.fstory.ui.presentation.navigation
+package com.checky.fstory.presentation.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.checky.fstory.ui.presentation.navigation.Routes.NavRoutes
-import com.checky.fstory.ui.presentation.navigation.container.MainContainer
-import com.checky.fstory.ui.presentation.screen.ubication.UbicationScreen
+import com.checky.fstory.presentation.navigation.container.MainContainer
+import com.checky.fstory.presentation.screen.welcome.WelcomeScreen
+import com.checky.fstory.presentation.navigation.Routes.NavRoutes
+import com.checky.fstory.presentation.screen.ubication.UbicationScreen
 
-import com.checky.fstory.ui.presentation.screen.login.LoginScreen
-import com.checky.fstory.ui.presentation.screen.mainContainer.profile.ProfileScreen
-import com.checky.fstory.ui.presentation.screen.register.RegisterScreen
-import com.checky.fstory.ui.presentation.screen.welcome.WelcomeScreen
+import com.checky.fstory.presentation.screen.login.LoginScreen
+import com.checky.fstory.presentation.screen.mainContainer.profile.ProfileScreen
+import com.checky.fstory.presentation.screen.register.RegisterScreen
 
 @Composable
 fun NavigationWrapper() {

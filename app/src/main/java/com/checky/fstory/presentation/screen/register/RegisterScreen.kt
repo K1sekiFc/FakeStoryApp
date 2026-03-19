@@ -1,4 +1,4 @@
-package com.checky.fstory.ui.presentation.screen.register
+package com.checky.fstory.presentation.screen.register
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -27,9 +27,9 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.checky.fstory.R
-import com.checky.fstory.ui.presentation.component.AppTopBarDef
-import com.checky.fstory.ui.presentation.component.GradientBackground
-import com.checky.fstory.ui.theme.defaultOutlinedTextFieldColors
+import com.checky.fstory.presentation.component.AppTopBarDef
+import com.checky.fstory.presentation.component.GradientBackground
+import com.checky.fstory.theme.defaultOutlinedTextFieldColors
 
 
 @OptIn(ExperimentalMaterial3Api::class)

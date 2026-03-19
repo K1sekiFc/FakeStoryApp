@@ -1,16 +1,16 @@
 package com.checky.fstory.di
 
-import com.checky.fstory.ui.data.local.dao.ProductDao
-import com.checky.fstory.ui.data.local.datastore.SessionDataStore
-import com.checky.fstory.ui.data.remote.api.AuthApi
-import com.checky.fstory.ui.data.remote.api.CartApi
-import com.checky.fstory.ui.data.remote.api.ProductApi
-import com.checky.fstory.ui.data.repository.AuthRepositoryImpl
-import com.checky.fstory.ui.data.repository.CartRepositoryImpl
-import com.checky.fstory.ui.data.repository.ProductRepositoryImpl
-import com.checky.fstory.ui.domain.repository.AuthRepository
-import com.checky.fstory.ui.domain.repository.CartRepository
-import com.checky.fstory.ui.domain.repository.ProductRepository
+import com.checky.fstory.data.local.dao.ProductDao
+import com.checky.fstory.data.local.datastore.SessionDataStore
+import com.checky.fstory.data.remote.api.AuthApi
+import com.checky.fstory.data.remote.api.CartApi
+import com.checky.fstory.data.remote.api.ProductApi
+import com.checky.fstory.data.repository.AuthRepositoryImpl
+import com.checky.fstory.data.repository.CartRepositoryImpl
+import com.checky.fstory.data.repository.ProductRepositoryImpl
+import com.checky.fstory.domain.repository.AuthRepository
+import com.checky.fstory.domain.repository.CartRepository
+import com.checky.fstory.domain.repository.ProductRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

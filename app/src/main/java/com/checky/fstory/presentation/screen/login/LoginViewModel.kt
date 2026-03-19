@@ -1,8 +1,8 @@
-package com.checky.fstory.ui.presentation.screen.login
+package com.checky.fstory.presentation.screen.login
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.checky.fstory.ui.domain.usecase.UsecaseLogin
+import com.checky.fstory.domain.usecase.UsecaseLogin
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableSharedFlow
@@ -50,12 +50,12 @@ class LoginViewModel @Inject constructor(val login: UsecaseLogin) : ViewModel() 
                 login(_uiState.value.user, _uiState.value.password)
             }
 
-            println("LOGIN RESPONSE: $response")
-
             _uiState.update { it.copy(isLoading = false) }
 
             if (response != null) {
                 _navigationEvent.emit(Unit)
+            }else {
+                _uiState.update { it.copy(error="Credenciales incorrectas") }
             }
         }
     }
@@ -94,5 +94,6 @@ data class LoginUiState(
     var password: String = "m38rmF\$",
     val isLoading: Boolean = false,
     val isLoginEnabled: Boolean = false,
-    val isLoginSuccess: Boolean = false
+    val isLoginSuccess: Boolean = false,
+    val error:String=""
 )

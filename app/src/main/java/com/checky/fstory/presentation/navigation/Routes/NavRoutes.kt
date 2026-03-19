@@ -1,4 +1,4 @@
-package com.checky.fstory.ui.presentation.navigation.Routes
+package com.checky.fstory.presentation.navigation.Routes
 
 import androidx.navigation3.runtime.NavKey
 import kotlinx.serialization.Serializable

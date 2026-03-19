@@ -1,4 +1,4 @@
-package com.checky.fstory.ui.presentation.theme
+package com.checky.fstory.presentation.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme

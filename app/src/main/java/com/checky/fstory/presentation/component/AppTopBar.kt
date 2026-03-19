@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalMaterial3Api::class)
 
-package com.checky.fstory.ui.presentation.component
+package com.checky.fstory.presentation.component
 
 import androidx.compose.foundation.layout.Row
 
@@ -17,7 +17,6 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 
 import androidx.compose.material3.Text
-import androidx.compose.material3.TopAppBarColors
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment

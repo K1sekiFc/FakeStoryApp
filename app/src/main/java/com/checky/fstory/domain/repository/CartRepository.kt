@@ -1,6 +1,6 @@
-package com.checky.fstory.ui.domain.repository
+package com.checky.fstory.domain.repository
 
-import com.checky.fstory.ui.domain.entity.CartEntity
+import com.checky.fstory.domain.entity.CartEntity
 
 interface CartRepository {
     suspend fun getCartProfile(): CartEntity

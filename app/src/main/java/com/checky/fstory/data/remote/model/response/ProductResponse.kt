@@ -1,6 +1,6 @@
-package com.checky.fstory.ui.data.remote.model.response
+package com.checky.fstory.data.remote.model.response
 
-import com.checky.fstory.ui.domain.entity.ProductEntity
+import com.checky.fstory.domain.entity.ProductEntity
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -22,14 +22,3 @@ data class Rating(
     val count : Int
 )
 
-fun ProductResponse.toDomain() : ProductEntity{
-    return ProductEntity(
-        productId= id ,
-        title =title,
-        price = price,
-        descriptor= description,
-        category= category ,
-        image =image,
-        rating = rating.rate
-    )
-}

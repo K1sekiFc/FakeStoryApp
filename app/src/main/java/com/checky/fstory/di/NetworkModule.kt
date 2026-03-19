@@ -1,11 +1,15 @@
 package com.checky.fstory.di
 
-import com.checky.fstory.ui.data.remote.api.AuthApi
-import com.checky.fstory.ui.data.remote.api.CartApi
-import com.checky.fstory.ui.data.remote.api.ProductApi
+import com.checky.fstory.data.remote.api.AuthApi
+import com.checky.fstory.data.remote.api.CartApi
+import com.checky.fstory.data.remote.api.ProductApi
+import com.checky.fstory.data.util.ErrorHandlerImpl
+import com.checky.fstory.domain.util.ErrorHandler
+import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
+import dagger.hilt.android.components.ViewModelComponent
 import dagger.hilt.components.SingletonComponent
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType.Companion.toMediaType
@@ -41,4 +45,14 @@ object NetworkModule {
 
     @Provides
     fun provideCartApi(retrofit: Retrofit): CartApi = retrofit.create(CartApi::class.java)
+
+    //TEST
+    @Module
+    @InstallIn(ViewModelComponent::class)
+    abstract class ErrorModule {
+        @Binds
+        abstract fun bindErrorHandler(
+            errorHandlerImpl: ErrorHandlerImpl
+        ): ErrorHandler
+    }
 }

@@ -1,4 +1,4 @@
-package com.checky.fstory.ui.presentation.screen.welcome
+package com.checky.fstory.presentation.screen.welcome
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -22,7 +22,8 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.checky.fstory.R
-import com.checky.fstory.ui.presentation.component.ImageFadeBackground
+import com.checky.fstory.presentation.component.ImageFadeBackground
+
 
 @Composable
 fun WelcomeScreen(

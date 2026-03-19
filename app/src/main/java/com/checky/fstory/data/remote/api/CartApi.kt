@@ -1,6 +1,6 @@
-package com.checky.fstory.ui.data.remote.api
+package com.checky.fstory.data.remote.api
 
-import com.checky.fstory.ui.data.remote.model.response.CartResponse
+import com.checky.fstory.data.remote.model.response.CartResponse
 import retrofit2.http.GET
 import retrofit2.http.Path
 

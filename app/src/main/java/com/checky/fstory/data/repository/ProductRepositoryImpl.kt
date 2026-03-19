@@ -1,11 +1,12 @@
-package com.checky.fstory.ui.data.repository
+package com.checky.fstory.data.repository
 
-import com.checky.fstory.ui.data.remote.api.ProductApi
-import com.checky.fstory.ui.data.local.dao.ProductDao
-import com.checky.fstory.ui.data.mapper.toDb
-import com.checky.fstory.ui.data.mapper.toDomain
-import com.checky.fstory.ui.domain.entity.ProductEntity
-import com.checky.fstory.ui.domain.repository.ProductRepository
+import android.util.Log
+import com.checky.fstory.data.local.dao.ProductDao
+import com.checky.fstory.data.remote.api.ProductApi
+import com.checky.fstory.data.mapper.toDb
+import com.checky.fstory.data.mapper.toDomain
+import com.checky.fstory.domain.entity.ProductEntity
+import com.checky.fstory.domain.repository.ProductRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject
@@ -19,11 +20,16 @@ class ProductRepositoryImpl @Inject constructor(
         return dao.getAllProducts()
             .map { list -> list.map{it.toDomain()}}
     }
-    suspend fun refreshProduct(){
+    override suspend fun refreshProduct(){
+        try{
         val remote =api.getAllProducts()
         dao.clearProducts()
         dao.insertProducts(remote.map { it.toDb() })
+    }catch (e: Exception) {
+         Log.e("Repo", "Error al refrescar productos", e)
+        throw e // Re-lanzamos para que el ViewModel sepa que falló
     }
+}
 
 //        val localProducts = dao.getAllProducts()
 //

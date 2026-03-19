@@ -1,4 +1,4 @@
-package com.checky.fstory.ui.presentation.screen.mainContainer.profile
+package com.checky.fstory.presentation.screen.mainContainer.profile
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -31,8 +31,8 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.checky.fstory.R
-import com.checky.fstory.ui.presentation.component.AppTopBarDef
-import com.checky.fstory.ui.presentation.component.GradientBackground
+import com.checky.fstory.presentation.component.AppTopBarDef
+import com.checky.fstory.presentation.component.GradientBackground
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

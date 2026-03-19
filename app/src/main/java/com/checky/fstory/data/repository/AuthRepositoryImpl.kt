@@ -1,41 +1,40 @@
-package com.checky.fstory.ui.data.repository
+package com.checky.fstory.data.repository
 
 import android.util.Log
-import com.checky.fstory.ui.data.remote.api.AuthApi
-import com.checky.fstory.ui.data.util.JwtUtils
-import com.checky.fstory.ui.data.local.datastore.SessionDataStore
-import com.checky.fstory.ui.data.remote.model.request.LoginRequest
-import com.checky.fstory.ui.data.remote.model.response.toDomain
+import com.checky.fstory.data.remote.api.AuthApi
+import com.checky.fstory.data.util.JwtUtils
+import com.checky.fstory.data.local.datastore.SessionDataStore
+import com.checky.fstory.data.remote.model.request.LoginRequest
+import com.checky.fstory.data.remote.model.response.toDomain
 //import com.abexa.myapplication1.ui.data.response.toDomain
-import com.checky.fstory.ui.domain.entity.UserEntity
-import com.checky.fstory.ui.domain.repository.AuthRepository
+import com.checky.fstory.domain.entity.UserEntity
+import com.checky.fstory.domain.repository.AuthRepository
 import kotlinx.coroutines.flow.firstOrNull
 import javax.inject.Inject
 
 class AuthRepositoryImpl @Inject constructor(private val api: AuthApi, private val session: SessionDataStore) : AuthRepository {
 
     override suspend fun doLogin(user: String,password: String): UserEntity {
- 
 
-            // 1️⃣ LOGIN
+            // LOGIN
             val loginResponse = api.doLogin(
                 LoginRequest(username = user, password = password)
             )
 
             val token = loginResponse.token
 
-            // 2️⃣ DECODIFICAR TOKEN
+            // DECODIFICAR TOKEN
             val userId = JwtUtils.getUserIdFromJwt(token)
                 ?: throw Exception("Invalid token")
 
-            // 3️⃣ GUARDAR EN DATASTORE
+            // GUARDAR EN DATASTORE
             session.saveToken(token)
             session.saveUserId(userId)
 
-            // 4️⃣ PEDIR USUARIO AL API
+            // PEDIR USUARIO AL API
             val userResponse = api.getUserById(userId)
         return try {
-            // 5️⃣ MAPEAR A DOMAIN ENTITY
+            // MAPEAR A DOMAIN ENTITY
              userResponse.toDomain(token)
 
         }catch (e: Exception){

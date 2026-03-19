@@ -1,10 +1,10 @@
-package com.checky.fstory.ui.data.repository
+package com.checky.fstory.data.repository
 
-import com.checky.fstory.ui.data.remote.api.CartApi
-import com.checky.fstory.ui.data.local.datastore.SessionDataStore
-import com.checky.fstory.ui.data.remote.model.response.toDomain
-import com.checky.fstory.ui.domain.entity.CartEntity
-import com.checky.fstory.ui.domain.repository.CartRepository
+import com.checky.fstory.data.remote.api.CartApi
+import com.checky.fstory.data.local.datastore.SessionDataStore
+import com.checky.fstory.data.remote.model.response.toDomain
+import com.checky.fstory.domain.entity.CartEntity
+import com.checky.fstory.domain.repository.CartRepository
 import kotlinx.coroutines.flow.first
 import javax.inject.Inject
 

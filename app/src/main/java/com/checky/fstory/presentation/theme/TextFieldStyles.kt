@@ -1,12 +1,12 @@
-package com.checky.fstory.ui.theme
+package com.checky.fstory.theme
 
 import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.runtime.Composable
-import com.checky.fstory.ui.presentation.theme.White40
+import com.checky.fstory.presentation.theme.White40
 
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.material3.MaterialTheme
-import com.checky.fstory.ui.presentation.theme.Purple10
+import com.checky.fstory.presentation.theme.Purple10
 
 
 @Composable

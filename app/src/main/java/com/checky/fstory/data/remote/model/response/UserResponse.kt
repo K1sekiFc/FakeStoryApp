@@ -1,6 +1,6 @@
-package com.checky.fstory.ui.data.remote.model.response
+package com.checky.fstory.data.remote.model.response
 
-import com.checky.fstory.ui.domain.entity.UserEntity
+import com.checky.fstory.domain.entity.UserEntity
 import kotlinx.serialization.Serializable
 
 @Serializable

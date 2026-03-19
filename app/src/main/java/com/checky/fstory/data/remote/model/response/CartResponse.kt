@@ -1,7 +1,7 @@
-package com.checky.fstory.ui.data.remote.model.response
+package com.checky.fstory.data.remote.model.response
 
-import com.checky.fstory.ui.domain.entity.CartEntity
-import com.checky.fstory.ui.domain.entity.ProductCartEntity
+import com.checky.fstory.domain.entity.CartEntity
+import com.checky.fstory.domain.entity.ProductCartEntity
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 

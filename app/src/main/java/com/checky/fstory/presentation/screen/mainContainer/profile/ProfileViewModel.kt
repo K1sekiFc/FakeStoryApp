@@ -1,9 +1,9 @@
-package com.checky.fstory.ui.presentation.screen.mainContainer.profile
+package com.checky.fstory.presentation.screen.mainContainer.profile
 
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.checky.fstory.ui.domain.usecase.UseCaseGetProfile
+import com.checky.fstory.domain.usecase.UseCaseGetProfile
 
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow

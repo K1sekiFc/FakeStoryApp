@@ -1,4 +1,4 @@
-package com.checky.fstory.ui.presentation.screen.login
+package com.checky.fstory.presentation.screen.login
 
 
 import androidx.compose.foundation.BorderStroke
@@ -48,10 +48,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.checky.fstory.ui.presentation.component.AppTopBarDef
-import com.checky.fstory.ui.presentation.component.GradientBackground
-import com.checky.fstory.ui.presentation.theme.White40
-import com.checky.fstory.ui.theme.defaultOutlinedTextFieldColors
+import com.checky.fstory.presentation.component.AppTopBarDef
+import com.checky.fstory.presentation.component.GradientBackground
+import com.checky.fstory.presentation.theme.White40
+import com.checky.fstory.theme.defaultOutlinedTextFieldColors
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
